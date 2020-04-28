@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: 0;
   box-sizing: border-box;
 }
 
@@ -31,9 +32,31 @@ button {
   margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #452aa8;
 }
 
 div li button {
   margin: 0 15px;
   background: #ca4949;
+  transition: all 0.5s;
+}
+
+div li button:hover {
+  background-color: #96070c;
+}
+
+input {
+  padding: 10px;
+  margin-right: 5px;
+  outline: 0;
+  border: 1px solid #eee;
+  color: "#333";
+}
+input::placeholder {
+  color: #666;
+  font-weight: 100;
 }
